@@ -1,0 +1,67 @@
+{
+  "hardware": "Tesla T4",
+  "vram_gb": 15.6,
+  "framework": "PyTorch + HuggingFace Transformers",
+  "model": "GPT-2 Medium (FP16)",
+  "gpu_memory_measurements": {
+    "128": {
+      "weight_mb": 734.81,
+      "kv_mb": 22.414,
+      "total_mb": 757.23,
+      "decode_ms": 36.66,
+      "tok_per_s": 27.3
+    },
+    "256": {
+      "weight_mb": 758.21,
+      "kv_mb": 11.863,
+      "total_mb": 770.07,
+      "decode_ms": 30.096,
+      "tok_per_s": 33.2
+    },
+    "512": {
+      "weight_mb": 771.06,
+      "kv_mb": 24.709,
+      "total_mb": 795.77,
+      "decode_ms": 21.654,
+      "tok_per_s": 46.2
+    }
+  },
+  "tier_transition_latency": {
+    "1MB": {
+      "hbm_to_dram_ms": 0.971,
+      "hbm_to_dram_bw_gb_s": 1.03,
+      "dram_to_hbm_ms": 0.115,
+      "dram_to_hbm_bw_gb_s": 8.68
+    },
+    "4MB": {
+      "hbm_to_dram_ms": 2.792,
+      "hbm_to_dram_bw_gb_s": 1.43,
+      "dram_to_hbm_ms": 0.354,
+      "dram_to_hbm_bw_gb_s": 11.3
+    },
+    "8MB": {
+      "hbm_to_dram_ms": 5.413,
+      "hbm_to_dram_bw_gb_s": 1.48,
+      "dram_to_hbm_ms": 0.693,
+      "dram_to_hbm_bw_gb_s": 11.55
+    },
+    "16MB": {
+      "hbm_to_dram_ms": 10.676,
+      "hbm_to_dram_bw_gb_s": 1.5,
+      "dram_to_hbm_ms": 1.376,
+      "dram_to_hbm_bw_gb_s": 11.63
+    }
+  },
+  "key_observations": {
+    "weight_bytes_constant": true,
+    "kv_grows_with_context": true,
+    "dram_to_hbm_faster_than_hbm_to_dram": true,
+    "hbm_to_dram_bw_gb_s_avg": 1.36,
+    "dram_to_hbm_bw_gb_s_avg": 10.29,
+    "decode_throughput_tok_per_s": {
+      "128": 27.3,
+      "256": 33.2,
+      "512": 46.2
+    }
+  }
+}

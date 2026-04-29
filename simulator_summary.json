@@ -1,0 +1,31 @@
+{
+  "lru_final": {
+    "total_blocks": 24000,
+    "hbm_blocks": 9830,
+    "dram_blocks": 14170,
+    "hbm_used_mb": 40.26368,
+    "dram_used_mb": 14.51008,
+    "hbm_occupancy": 0.7999674479166666,
+    "total_evictions": 14170,
+    "wasted_evictions": 1200,
+    "promotion_cost_mb": 1999.282176,
+    "total_bytes_moved_gb": 0.11281408
+  },
+  "dynamic_final": {
+    "total_blocks": 24000,
+    "hbm_blocks": 9830,
+    "dram_blocks": 14170,
+    "hbm_used_mb": 40.26368,
+    "dram_used_mb": 14.51008,
+    "hbm_occupancy": 0.7999674479166666,
+    "total_evictions": 14170,
+    "wasted_evictions": 720,
+    "promotion_cost_mb": 858.19392,
+    "total_bytes_moved_gb": 0.11281408
+  },
+  "improvement": {
+    "wasted_evictions_reduction_pct": 40.0,
+    "promotion_cost_reduction_pct": 57.07489766567099,
+    "bytes_moved_reduction_pct": 0.0
+  }
+}

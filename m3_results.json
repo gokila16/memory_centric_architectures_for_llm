@@ -1,0 +1,36 @@
+{
+  "device": "Apple M3",
+  "model": "GPT-2 Medium",
+  "results": {
+    "128": {
+      "seq_len": 128,
+      "decode_ms": 4.706,
+      "tok_per_s": 212.5,
+      "throughput_drop": "baseline"
+    },
+    "256": {
+      "seq_len": 256,
+      "decode_ms": 4.948,
+      "tok_per_s": 202.1,
+      "throughput_drop": "4.9% slower"
+    },
+    "512": {
+      "seq_len": 512,
+      "decode_ms": 5.048,
+      "tok_per_s": 198.1,
+      "throughput_drop": "6.8% slower"
+    },
+    "768": {
+      "seq_len": 768,
+      "decode_ms": 4.382,
+      "tok_per_s": 228.2,
+      "throughput_drop": "-7.4% slower"
+    },
+    "1024": {
+      "seq_len": 1024,
+      "decode_ms": 5.136,
+      "tok_per_s": 194.7,
+      "throughput_drop": "8.4% slower"
+    }
+  }
+}
